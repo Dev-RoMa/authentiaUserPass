@@ -1,0 +1,70 @@
+<!-- inicio del header -->
+<ion-header>
+
+<!-- inicio del toolbar -->
+  <ion-toolbar>
+    <ion-title> Main </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- inicio del contenido -->
+<ion-content>
+  <ion-grid>
+  <!-- Input Usuario -->
+  <div class="ion-text-center ion-padding">
+  <ion-item>
+    <ion-label class ="user" position="floating" > Usuario </ion-label>
+    <ion-input [(ngModel)]="md_user"></ion-input>
+  </ion-item>
+
+  <!-- Input contraseña (debe estar con **; usar "type = password")-->
+  <ion-item>
+    <ion-label class="pass" position="floating" > Contraseña </ion-label>
+    <ion-input type="password" [(ngModel)]="md_pass"></ion-input>
+  </ion-item>
+  </div>
+
+  <!--boton de ingreso-->
+    <ion-row>
+      <ion-item>
+        <ion-button (click) ="login()" expand="block" class="degradado"> Ingresar </ion-button>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+  <!--boton de recuperación-->
+  <ion-item>
+    <ion-label>
+    <a href="/pass-change"> ¿Olvidaste tu contraseña? </a>
+    </ion-label>
+  </ion-item>
+
+</ion-content>
+<!-- fin del contenido-->
+
+<!-- footer
+<ion-footer style="background-color:blue">
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
+-- fin del footer -->
+
+<ion-footer style="background-color:yellow;" >
+    <ion-text>¡Contactanos!</ion-text>
+    <ion-label>
+      <div><br></div>
+      <div><ion-text>(+56) 2 2999 3862</ion-text></div>
+      <div><ion-text>Admisión</ion-text></div>
+      <div><ion-text>(+56) 227 120 640</ion-text></div>
+      <div><ion-text>Cursos y Diplomados</ion-text></div>
+      <div><ion-text>(+56) 442201096</ion-text></div>
+      <div><ion-text>Mesa de Servicios</ion-text></div>
+      <div><ion-text>(+56) 44220 1098</ion-text></div>
+      <div><ion-text>Servicios Académicos</ion-text></div>
+      <div><ion-text>Servicios de Financiamiento</ion-text></div>
+      <div><ion-text>Servicios de Vida Estudiantil</ion-text></div>
+      <div><ion-text>Servicios Tecnológicos</ion-text></div>
+      <div><ion-text>Otros Servicios</ion-text></div>
+    </ion-label>
+</ion-footer>

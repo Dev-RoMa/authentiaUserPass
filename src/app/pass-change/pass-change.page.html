@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pass-change</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- Input Usuario 
+    <div class="ion-text-center ion-padding">
+      <ion-item>
+        <ion-label class ="user" position="floating" > Usuario </ion-label>
+        <ion-input [(ngModel)]="md_user"></ion-input>
+      </ion-item>
+      -->
+      <div><br></div>
+      <div><br></div>
+      <div><br></div>
+
+      <!-- Input usuario -->
+
+      <ion-item>
+        <ion-label class ="user" position="floating" > Usuario </ion-label>
+        <ion-input [(ngModel)]="md_user"></ion-input>
+      </ion-item>
+
+      <div><br></div>
+      <div><br></div>
+      <div><br></div>
+      <!-- Input contraseña (debe estar con **; usar "type = password")-->
+      <ion-item>
+        <ion-label class="nPass" position="floating" > Contraseña Nueva </ion-label>
+        <ion-input type="password" [(ngModel)]="md_nPass"></ion-input>
+      </ion-item>
+      
+      <div><br></div>
+      <div><br></div>
+      <div><br></div>
+      <!-- boton encontrar usuario y cambiar contraseña -->
+
+      <ion-row>
+        <ion-item>
+          <ion-button (click) ="userV()" expand="block" class="degradado"> Cambiar contraseña </ion-button>
+        </ion-item>
+      </ion-row>
+      
+      <!--boton para volver-->
+
+      <ion-item>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/" mode="md"></ion-back-button>
+        <ion-text>Volver </ion-text>
+      </ion-buttons>
+      </ion-item>
+
+</ion-content>
+
+<ion-footer style="background-color:yellow;" >
+  <ion-text>Si tienes problemas con la contraseña</ion-text>
+  <div><br></div>
+  <div><ion-text>Mesa de Servicios</ion-text></div>
+  <div><ion-text>(+56) 44220 1098</ion-text></div>
+</ion-footer>

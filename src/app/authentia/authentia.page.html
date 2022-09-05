@@ -1,0 +1,40 @@
+<!-- inicio del header -->
+<ion-header>
+
+<!--  -- inicio del toolbarc-->
+    <ion-toolbar>
+       <ion-title>Authentia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido de la pagina -->
+<ion-content>
+
+  <ion-label>
+    <!-- la camara debe abrir la camara del telefono -->
+    <!-- centrar la maldita camara q_q -->
+    <ion-img id="camera" src="assets/logo-camera.png" style="width:25%"> </ion-img>
+    <!-- el QR debe redirigir a la pagina de la institución educativa-->
+    <!-- el QR debe estar hacia la derecha (es estetico xd)-->
+    <ion-img id="QR" src="assets/QR-code-duoc.png" style="width:25%"> </ion-img>
+  </ion-label>
+  <ion-label></ion-label>
+
+        <!--boton para volver-->
+
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="/" mode="md"></ion-back-button>
+            <ion-text>Volver </ion-text>
+          </ion-buttons>
+          </ion-item>
+
+</ion-content>
+
+<ion-footer style="background-color:yellow;">
+  <ion-text>Si tienes problemas: </ion-text>
+  <ion-text>Contacta a tu coordinador de carrera</ion-text>
+  <div><br></div>
+  <div><ion-text>Mesa de Servicios</ion-text></div>
+  <div><ion-text>(+56) 44220 1098</ion-text></div>
+</ion-footer>
