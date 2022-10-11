@@ -8,8 +8,9 @@ import { DbService } from '../services/db.service';
 })
 export class PassChangePage implements OnInit {
 
-  md_nPass: string = '';
-  md_user: string = '';
+  md_correo: string = '';
+  md_nPass1: string = '';
+  md_nPass2: string ='';
   changeValidator: boolean;
 
   constructor(private dbService:DbService) { }
@@ -18,7 +19,7 @@ export class PassChangePage implements OnInit {
   }
 
   userV(){
-  this.dbService.userValidation(this.md_user,this.md_nPass)
+  this.dbService.userValidation(this.md_correo,this.md_nPass1,this.md_nPass2)
   }
 
   /*changePass(){

@@ -20,19 +20,22 @@
       <!-- Input usuario -->
 
       <ion-item>
-        <ion-label class ="user" position="floating" > Usuario </ion-label>
-        <ion-input [(ngModel)]="md_user"></ion-input>
+        <ion-label class ="user" position="floating" > Correo electronico </ion-label>
+        <ion-input [(ngModel)]="md_correo"></ion-input>
       </ion-item>
 
-      <div><br></div>
       <div><br></div>
       <div><br></div>
       <!-- Input contraseña (debe estar con **; usar "type = password")-->
       <ion-item>
         <ion-label class="nPass" position="floating" > Contraseña Nueva </ion-label>
-        <ion-input type="password" [(ngModel)]="md_nPass"></ion-input>
+        <ion-input type="password" [(ngModel)]="md_nPass1"></ion-input>
       </ion-item>
       
+      <ion-item>
+        <ion-label class="nPass" position="floating" > Contraseña Actual </ion-label>
+        <ion-input type="password" [(ngModel)]="md_nPass2"></ion-input>
+      </ion-item>
       <div><br></div>
       <div><br></div>
       <div><br></div>

@@ -1,6 +1,7 @@
 {
   "name": "app-prueba",
   "integrations": {
+    "cordova": {},
     "capacitor": {}
   },
   "type": "angular"

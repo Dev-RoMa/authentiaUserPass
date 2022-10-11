@@ -9,6 +9,8 @@ import { DbService } from '../services/db.service';
 export class MainPagePage implements OnInit {
   md_user: string = '';
   md_pass: string = '';
+  user: string='';
+  pass: string='';
 
   constructor(private db:DbService) { }
 
@@ -16,7 +18,12 @@ ngOnInit() {
 }
 
 login() {
-  if(!this.db.validateCredentials(this.md_user, this.md_pass)) {
+  this.user=this.md_user;
+  this.pass=this.md_pass;
+  this.md_user ="";
+  this.md_pass="";
+  if(!this.db.validateCredentials(this.user, this.pass )) {
+    
   }
 }
 }
